@@ -2,7 +2,7 @@
 
 ---
 
-https://serebrovskiy.github.io/rating-place
+https://serebrovskiy.github.io/interactive-map
 
 ### Описание
 
