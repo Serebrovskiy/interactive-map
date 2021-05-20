@@ -1,0 +1,22 @@
+@import url(./__content/popup__content.css);
+@import url(./__close/popup__close.css);
+@import url(./__text/popup__text.css);
+@import url(./__conteiner/popup__conteiner.css);
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: -200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  transition: visibility 0s, opacity 0.6s;
+  z-index: 10;
+}

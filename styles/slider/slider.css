@@ -1,0 +1,8 @@
+@import url(./slider__button/slider__button.css);
+
+.slider {
+  width: 150px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}

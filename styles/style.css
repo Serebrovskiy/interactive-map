@@ -1,0 +1,23 @@
+@import url(./content/content.css);
+@import url(./map/map.css);
+@import url(./slider/slider.css);
+@import url(./popup/popup.css);
+@import url(./popup/_is-opened/popup_is-opened.css);
+@import url(./map/__marker/_active/map__marker_active.css);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  border: 1px solid grey;
+}

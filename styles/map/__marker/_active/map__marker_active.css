@@ -1,0 +1,5 @@
+.map__marker_active {
+  opacity: 0.8;
+  stroke: black;
+  stroke-width: 3;
+}

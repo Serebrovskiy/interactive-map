@@ -1,0 +1,69 @@
+.map__marker {
+  /* fill: rgb(207, 237, 100); */
+  opacity: 0.3;
+  fill: #fff;
+}
+
+.map__marker:hover {
+  transition: opacity 0.2s ease;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.map__marker_red {
+  fill: red;
+}
+.map__marker_blue {
+  fill: blue;
+}
+.map__marker_green {
+  fill: green;
+}
+.map__marker_yellow {
+  fill: yellow;
+}
+.map__marker_orange {
+  fill: orange;
+}
+.map__marker_violet {
+  fill: violet;
+}
+.map__marker_salmon {
+  fill: salmon;
+}
+.map__marker_lime {
+  fill: lime;
+}
+.map__marker_aqua {
+  fill: aqua;
+}
+.map__marker_teal {
+  fill: teal;
+}
+.map__marker_chocolate {
+  fill: chocolate;
+}
+.map__marker_pink {
+  fill: pink;
+}
+.map__marker_indigo {
+  fill: indigo;
+}
+.map__marker_purple {
+  fill: purple;
+}
+.map__marker_royalblue {
+  fill: royalblue;
+}
+.map__marker_royalblue {
+  fill: royalblue;
+}
+.map__marker_fuchsia {
+  fill: fuchsia;
+}
+.map__marker_grey {
+  fill: grey;
+}
+.map__marker_gold {
+  fill: gold;
+}
