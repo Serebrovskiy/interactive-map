@@ -25,18 +25,17 @@ buttonNext.addEventListener('click', () => {
   for (let marker of markerList) {
     const nextActive = marker.nextElementSibling;
 
-    if (marker.classList.contains('map__marker_active') && !nextActive) {
-      buttonNext.classList.add('slider__button_disable');
-      buttonNext.disabled = true;
-      break
-    }
-
     if (marker.classList.contains('map__marker_active')) {
       console.log(nextActive.dataset.description)
       marker.classList.remove('map__marker_active');
       nextActive.classList.add('map__marker_active');
       buttonPrevious.classList.remove('slider__button_disable');
       buttonPrevious.disabled = false;
+
+      if (!nextActive.nextElementSibling) {
+        buttonNext.classList.add('slider__button_disable');
+        buttonNext.disabled = true;
+      }
       break
     }
   }
@@ -47,18 +46,17 @@ buttonPrevious.addEventListener('click', () => {
   for (let marker of markerList) {
     const previousActive = marker.previousElementSibling;
 
-    if (marker.classList.contains('map__marker_active') && !previousActive) {
-      buttonPrevious.classList.add('slider__button_disable');
-      buttonPrevious.disabled = true;
-      break
-    }
-
     if (marker.classList.contains('map__marker_active')) {
       console.log(previousActive.dataset.description)
       marker.classList.remove('map__marker_active');
       previousActive.classList.add('map__marker_active');
       buttonNext.classList.remove('slider__button_disable');
       buttonNext.disabled = false;
+
+      if (!previousActive.previousElementSibling) {
+        buttonPrevious.classList.add('slider__button_disable');
+        buttonPrevious.disabled = true;
+      }
       break
     }
   }
