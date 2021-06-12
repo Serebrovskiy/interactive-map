@@ -4,6 +4,7 @@ const popupCloseButton = document.querySelector('.popup__close');
 const popupText = document.querySelector('.popup__text');
 const buttonPrevious = document.querySelector('.slider__button_previous');
 const buttonNext = document.querySelector('.slider__button_next');
+const nameDistrict = document.querySelector('.name-district__text');
 
 //откритие/закрытие попапа
 for (let marker of markerList) {
@@ -27,6 +28,7 @@ buttonNext.addEventListener('click', () => {
 
     if (marker.classList.contains('map__marker_active')) {
       console.log(nextActive.dataset.description)
+      nameDistrict.textContent = nextActive.dataset.description + " район";
       marker.classList.remove('map__marker_active');
       nextActive.classList.add('map__marker_active');
       buttonPrevious.classList.remove('slider__button_disable');
@@ -48,6 +50,7 @@ buttonPrevious.addEventListener('click', () => {
 
     if (marker.classList.contains('map__marker_active')) {
       console.log(previousActive.dataset.description)
+      nameDistrict.textContent = previousActive.dataset.description + " район";
       marker.classList.remove('map__marker_active');
       previousActive.classList.add('map__marker_active');
       buttonNext.classList.remove('slider__button_disable');
